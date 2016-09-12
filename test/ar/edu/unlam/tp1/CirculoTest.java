@@ -40,8 +40,7 @@ public class CirculoTest {
 	}
 	
 	@Test
-	public void queElPerimetroDeUnCirculoConRadio9Punto8Es615Punto73() {
-		// Voy a interpretar PERIMETRO, en el cual me tendria que dar 61.57 (si tomamos a pi como 3.1415
+	public void queElPerimetroDeUnCirculoConRadio9Punto8Es61punto57() {
 		Circulo circuloPrueba = new Circulo(9.8);
 		Double perimetro;
 		perimetro = circuloPrueba.calcularPerimetro();
@@ -49,8 +48,7 @@ public class CirculoTest {
 	}
 	
 	@Test
-	public void crearUnCirculoConRadio16Punto6Es865Punto67() { 
-		//Es 865.69, ya que el programa toma todos los decimales de PI
+	public void crearUnCirculoConRadio16Punto6Es865Punto69() { 
 		Circulo circuloPrueba = new Circulo(16.6);
 		Double area;
 		area = circuloPrueba.calcularArea();
