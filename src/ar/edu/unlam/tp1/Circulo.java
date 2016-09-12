@@ -6,11 +6,15 @@ public class Circulo {
 	// DECLARACION ATRIBUTOS
 	private Double radio;
 
-	// CONSTRUCTOR
+	// CONSTRUCTORES
 	public Circulo(Double radio) {
 		this.radio = radio;
-
 	}
+	
+	public Circulo(){
+		
+	}
+
 
 	// GETTERS Y SETTERS
 	public Double getRadio() {
@@ -30,7 +34,7 @@ public class Circulo {
 
 	public Double calcularArea() {
 		Double area;
-		area = Math.pow(radio * Math.PI, 2);
+		area = (Math.pow(radio,2)* Math.PI);
 		return area;
 	}
 
