@@ -1,6 +1,7 @@
 package ar.edu.unlam.tp1;
 
 import static org.junit.Assert.*;
+
 import org.junit.Test;
 
 public class CirculoTest {
@@ -9,7 +10,10 @@ public class CirculoTest {
 	
 	@Test
 	public void crearUnCirculoConRadio2() {
-		fail("Not yet implemented");
+		Circulo circuloPrueba = new Circulo(2d);
+		Double radio;
+		radio= circuloPrueba.getRadio();
+		assertEquals(2, radio ,0.01);
 	}
 	
 	@Test
