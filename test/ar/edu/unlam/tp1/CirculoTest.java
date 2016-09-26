@@ -70,4 +70,11 @@ public class CirculoTest {
 		assertEquals(esperado.doubleValue(), actual.doubleValue(),0.01);
 	}
 	
+	@Test
+	public void compararRadios(){
+		Circulo circuloUno = new Circulo(2d);
+		Circulo circuloDos = new Circulo(2d);
+		assertEquals(circuloUno,circuloDos);
+		//assertNotEquals(circuloUno,circuloDos);
+	}
 }

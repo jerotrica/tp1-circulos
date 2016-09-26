@@ -10,11 +10,10 @@ public class Circulo {
 	public Circulo(Double radio) {
 		this.radio = radio;
 	}
-	
-	public Circulo(){
-		
-	}
 
+	public Circulo() {
+
+	}
 
 	// GETTERS Y SETTERS
 	public Double getRadio() {
@@ -34,10 +33,18 @@ public class Circulo {
 
 	public Double calcularArea() {
 		Double area;
-		area = (Math.pow(radio,2)* Math.PI);
+		area = (Math.pow(radio, 2) * Math.PI);
 		return area;
 	}
 
+	
+	public boolean equals(Object objeto) {
+		Circulo aComparar = (Circulo) objeto;
+		if (this.radio.equals(aComparar.getRadio())) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
 }
-
-
