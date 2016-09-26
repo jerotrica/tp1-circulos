@@ -72,7 +72,7 @@ public class CirculoTest {
 	
 	@Test
 	public void compararRadios(){
-		Circulo circuloUno = new Circulo(2d);
+		Circulo circuloUno = new Circulo(3d);
 		Circulo circuloDos = new Circulo(2d);
 		assertEquals(circuloUno,circuloDos);
 		//assertNotEquals(circuloUno,circuloDos);
